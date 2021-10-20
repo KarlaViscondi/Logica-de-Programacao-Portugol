@@ -14,12 +14,10 @@ programa
 
 		 inteiro opiniao, bom_m, bom_f, ruim_m, ruim_f, genero
 
-		 opiniao = 0
 		 bom_m = 0
 		 bom_f = 0
 		 ruim_m = 0
 		 ruim_f = 0
-		 genero = 0
 
 		 para (inteiro i=1; i<=30; i++) {
 		 	escreva("\nQual sua opinião sobre o filme? Digite 1 - Bom ou 2 - Ruim ")
@@ -30,12 +28,14 @@ programa
 
 		 	se ( opiniao == 1 e genero == 1 ) {
 		 		bom_f = bom_f + 1
-		 	} se (opiniao == 2 e genero == 1) {
+		 	} senao se (opiniao == 2 e genero == 1) {
 		 		ruim_f = ruim_f + 1
-		 	} se (opiniao == 1 e genero == 2) {
+		 	} senao se (opiniao == 1 e genero == 2) {
 		 		bom_m = bom_m + 1
-		 	} se (opiniao == 2 e genero == 2) {
+		 	} senao se (opiniao == 2 e genero == 2) {
 		 		ruim_m = ruim_m + 1
+		 	} senao {
+		 		escreva("\nOpção Inválida")
 		 	}
 		 }
 		 escreva("\nQuantidade de mulheres que gostaram: ", bom_f)
@@ -49,7 +49,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 696; 
+ * @POSICAO-CURSOR = 1182; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
